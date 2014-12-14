@@ -149,19 +149,20 @@ for (i in 1:n) {
              newActivityData$weekend == FALSE
     weekdayIntervalSteps[[i]] <- median(newActivityData$steps[index])
 }
-weekendIntervalSteps
-weekdayIntervalSteps
+weekend <- NULL
+weekend$intervals <- intervals
+weekend$steps <- 1.0*weekendIntervalSteps
+weekend$id <- "weekend"
+weekday <- NULL
+weekday$intervals <- intervals
+weekday$steps <- 1.0*weekdayIntervalSteps
+weekday$id <- "weekday"
+comparison <- rbind(as.data.frame(weekend), as.data.frame(weekday))
+sum(weekend$steps)
+sum(weekday$steps)
 ```
 3. Plot the time series of the number of steps per interval for weekends and weekdays
 ```{r,echo=TRUE}
-plot.default(intervals,weekendIntervalSteps,
-      main='weekends',
-      sub='',
-      xlab='',
-      ylab='steps')
-plot.default(intervals,weekdayIntervalSteps,
-      main='weekdays',
-      sub='',
-      xlab='5 minute interval in HHMM format',
-      ylab='steps')
+library(lattice)
+xyplot(steps ~ intervals | id, comparison,grid=TRUE,layout=c(1,2))
 ```
