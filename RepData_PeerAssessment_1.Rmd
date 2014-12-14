@@ -1,6 +1,6 @@
 ---
 title: "RepData_PeerAssessment_1"
-author: "John D. Phillips"
+author: "John D Phillips"
 date: "December 13, 2014"
 output: html_document
 ---
