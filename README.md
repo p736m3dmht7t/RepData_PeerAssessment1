@@ -1,8 +1,9 @@
 ## December 13, 2014
-       This is my submission of Peer Review Assignment 1 -- Reproducible Reasearch MOOC
-       Any questions, please email me at john dot d dot phillips at sbcglobal dot net (make the obvious changes)
-       Thank you,
-       John Phillips
+	This is my submission of Peer Review Assignment 1 -- Reproducible Reasearch MOOC
+ 	Any questions, please email me at john dot d dot phillips at sbcglobal dot net
+	(make the obvious changes)
+	Thank you,
+	John Phillips
 
 ## Introduction
 
